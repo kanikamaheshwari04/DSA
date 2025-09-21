@@ -1,17 +1,21 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main (){
-    int year;
-    cout << "enter year:";
-    cin >> year;
-   
-
-   
-    if (year%4==0){
-        cout<< "leap year";
+    int n;
+    int i;
+    cout << "enter n :";
+    cin >> n;
+    for (i=2;i<n;i++){
+        if (n%i==0){
+            break;
+        }
+        
     }
-
-    else {
-        cout << "not";
-    }
+    if (n==i){
+            cout << "yes";
+        }
+        else {
+            cout << "not";
+        }
+   
 }
