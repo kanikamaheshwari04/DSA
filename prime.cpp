@@ -1,14 +1,16 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main (){
-    int num ;
-    cout << " enter num :";
-
-    cin >> num;
-     for (int i =1;i<=num;i++){
-        if (num%i==0){
-            cout << i << " ,";    
-            }
-     }
-     return 0;
+   bool isSafe(int sudoku [9][9],int row,int col,int dig) {
+    for (int i=0;i<=8;i++){
+        if (sudoku[i][col]==dig){
+            return false;
+        }
     }
+}
+for (int j=0;j<=8;j++){
+        if (sudoku[row][j]==dig){
+            return false;
+        }
+    }
+}
